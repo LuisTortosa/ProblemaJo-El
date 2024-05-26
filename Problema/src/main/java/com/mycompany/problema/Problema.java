@@ -5,6 +5,7 @@
 package com.mycompany.problema;
 
 import static com.mycompany.problema.Utils.*;
+import java.util.Scanner;
 
 /**
  *
@@ -13,7 +14,11 @@ import static com.mycompany.problema.Utils.*;
 public class Problema {
 
     public static void main(String[] args) {
-        afegirReptils();
-        ComprobarReptil();
+        Scanner sc = new Scanner(System.in);
+        String tipo;
+        
+        System.out.println("Dime un tipo de reptil");
+        tipo = sc.nextLine();
+        ComprobarReptil(tipo);
     }
 }
